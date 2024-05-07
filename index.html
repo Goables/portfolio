@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <section class="navBar">
-        <button class="navButton"><a href="index.html">Home</a></button>
-        <button class="navButton"><a href="aboutMe.html">About Me</a></button>
-        <button class="navButton"><a href="resume.html">Resume</a></button>
-        <button class="navButton"><a href="portfolio.html">Portfolio</a></button>
-        <button class="navButton"><a href="contactMe.html">Contact Me</a></button>
-    </section>
+    <div class="sky" data-sky></div>
+    <script src="script.js"></script>
+
+    <nav>
+        <section class="navbar">
+            <button class="navbutton" onclick="changePage(`index.html`)">Home</button>
+              <button class="navbutton" onclick="changePage(`aboutMe.html`)">About Me</button>
+              <button class="navbutton" onclick="changePage(`resume.html`)">Resume</button>
+              <button class="navbutton" onclick="changePage(`portfolio.html`)">Portfolio</button>
+              <button class="navbutton" onclick="changePage(`contactMe.html`)">Contact Me</button>
+          </section>
+    </nav>
 
     <section class="banner">
         <img class="bannerImage" src="">

@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <section class="navBar">
-        <button class="navButton"><a href="index.html">Home</a></button>
-        <button class="navButton"><a href="aboutMe.html">About Me</a></button>
-        <button class="navButton"><a href="resume.html">Resume</a></button>
-        <button class="navButton"><a href="portfolio.html">Portfolio</a></button>
-        <button class="navButton"><a href="contactMe.html">Contact Me</a></button>
-    </section>
+    <div class="sky" data-sky></div>
+    <script src="script.js"></script>
+
+    <nav>
+        <section class="navbar">
+            <button class="navbutton" onclick="changePage(`index.html`)">Home</button>
+              <button class="navbutton" onclick="changePage(`aboutMe.html`)">About Me</button>
+              <button class="navbutton" onclick="changePage(`resume.html`)">Resume</button>
+              <button class="navbutton" onclick="changePage(`portfolio.html`)">Portfolio</button>
+              <button class="navbutton" onclick="changePage(`contactMe.html`)">Contact Me</button>
+          </section>
+    </nav>
 
     <section class="banner">
         <img class="bannerImage" src="">
@@ -22,16 +28,19 @@
             <h1>Owen Gaffney</h1>
         </header>
     </section>
-    <section class="content">
-        <h2>Portfolio</h2>
-        <strong>Web Projects</strong>
-        <ul>
-            <li><a href="https://jpmerchpage.netlify.app/merchhp">Jurassic Park Merchandise Page</a></li>
-        </ul>
-        <strong>Writing Works</strong>
-        <ul>
-            <li><a href="https://docs.google.com/document/d/14KOvU6gkv1NC7PGYIlG7OGDe-9TFi2yGqNy0Wqr3cDk/edit?usp=sharing">Jurassic Park APA Essay</a></li>
-        </ul>
+
+    <section class="contentWrapper">
+        <section class="content">
+            <h2>Portfolio</h2>
+            <strong>Web Projects</strong>
+            <ul>
+                <li><a href="https://jpmerchpage.netlify.app/merchhp">Jurassic Park Merchandise Page</a></li>
+            </ul>
+            <strong>Writing Works</strong>
+            <ul>
+                <li><a href="https://docs.google.com/document/d/14KOvU6gkv1NC7PGYIlG7OGDe-9TFi2yGqNy0Wqr3cDk/edit?usp=sharing">Jurassic Park APA Essay</a></li>
+            </ul>
+        </section>
     </section>
 </body>
 </html>
