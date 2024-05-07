@@ -73,7 +73,10 @@
     margin-bottom: 1%;
 }
 
-.content>h3, #introduction>h2, #aboutMeIntro>h2, #resumeIntro>h2 {
+.content>h3,
+#introduction>h2,
+#aboutMeIntro>h2,
+#resumeIntro>h2 {
     color: rgb(146, 255, 248);
     font-size: 1.6em;
 }
@@ -128,8 +131,8 @@ li {
 }
 
 .readMoreButton:hover::after {
-    right:.5em;
-    opacity:1;
+    right: .5em;
+    opacity: 1;
 }
 
 h2 {
