@@ -1,6 +1,8 @@
 * {
     overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -8,7 +10,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row wrap;
-    height: 5vh;
+    height: 5;
 }
 
 .navbutton {
@@ -18,7 +20,7 @@
     margin-right: 2%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
-    background: rgb(56, 62, 76);
+    background: rgb(54, 76, 92);
     color: white;
     padding: 0px 12px;
     border-color: white;
@@ -29,14 +31,14 @@
 
 .navbutton:hover {
     text-decoration: none;
-    background: #49505f;
+    background: #3e5362;
     cursor: pointer;
 }
 
 
 .navbutton:active {
     text-decoration: none;
-    background: #21242b;
+    background: #3f5a66;
     cursor: pointer;
 }
 
@@ -51,10 +53,75 @@
     margin-bottom: 3%;
     width: 70%;
     color: #fff;
-    background-color: rgba(118, 49, 150, 0.61);
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(14, 14, 149);
+    background-color: rgba(139, 59, 176, 0.61);
     font-family: "JetBrains Mono", monospace;
 }
 
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1% 2% 2% 2%;
+}
+
+.readMoreButton {
+    background-color: rgb(240, 167, 32);
+    margin: 1% 2% 1% 1%;
+    border-style: none;
+    transition: all 0.5s;
+    transition: 0.2s;
+    padding: 1%;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+}
+
+.readMoreButton:after {
+    content: '>';
+    color: white;
+    position: absolute;
+    transition: 0.2s;
+    right: -2em;
+    opacity: 0;
+}
+
+.readMoreButton:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.readMoreButton:hover::after {
+    right:.8em;
+    opacity:1;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#resumeEmbed {
+    margin-top: 5%;
+}
+
+
+
+/* Background Stuff */
 .sky {
     position: fixed;
     width: 100%;
@@ -74,6 +141,6 @@
     height: 0.1875rem;
     border-radius: 50%;
     background-color: #fff;
-    opacity: 0.2;
+    opacity: 0.4;
     z-index: -1;
 }
