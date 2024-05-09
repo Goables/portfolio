@@ -181,7 +181,19 @@ p {
     left: 0;
     background-color: #000;
     animation: sky infinite linear alternate;
-    z-index: -1;
+    z-index: -3;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sky2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000000;
+    z-index: -2;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -192,6 +204,26 @@ p {
     height: 0.1875rem;
     border-radius: 50%;
     background-color: #fff;
-    opacity: 0.6;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.star--type-0 {
+    will-change: transform;
+    width: 0.1875rem;
+    height: 0.1875rem;
+    border-radius: 50%;
+    background-color: #a5c8f9;
+    opacity: 1;
+    z-index: -1;
+}
+
+.star--type-1 {
+    will-change: transform;
+    width: 0.1875rem;
+    height: 0.1875rem;
+    border-radius: 50%;
+    background-color: #ffcbb7;
+    opacity: .5;
     z-index: -1;
 }
