@@ -1,12 +1,6 @@
 function changePage(page) {
     location.href = page;
 }
-function sendMail() {
-    let link = "mailto:owen.gaffney23@student.cart.org";
-
-    window.open(link);
-}
-
 
 const SKY = document.querySelector(`[data-sky]`);
 const QUANTITY = SKY.dataset.sky ? +SKY.dataset.sky : 40;
