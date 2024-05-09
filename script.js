@@ -38,7 +38,7 @@ if (SKY) {
         `;
             
             const starClass = `star star--type-${Math.floor(Math.random() * 3)}`
-            let chance = getRandomInt(15);
+            let chance = getRandomInt(5);
             
             if (chance === 1) {
                 document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: 5;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(4)}' loop='-1'><div style="z-index: 5;" class="${starClass}"></div></marquee>`
