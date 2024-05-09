@@ -1,5 +1,10 @@
-function changePage(page){
-        location.href = page;
+function changePage(page) {
+    location.href = page;
+}
+function sendMail() {
+    let link = "mailto:owen.gaffney23@student.cart.org";
+
+    window.open(link);
 }
 
 

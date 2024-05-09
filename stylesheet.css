@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
 .navbar {
     background: rgb(56, 62, 76);
     display: flex;
@@ -45,11 +51,10 @@
 .contentWrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     align-self: center;
-    margin-top: 1%;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 1%;
     margin-bottom: 3%;
     width: 70%;
     color: #fff;
@@ -68,6 +73,10 @@
     margin: 1% 2% 2% 2%;
 }
 
+.content>p {
+    margin: 2%;
+}
+
 .content>h2 {
     font-size: 2em;
     margin-bottom: 1%;
@@ -77,12 +86,12 @@
 #introduction>h2,
 #aboutMeIntro>h2,
 #resumeIntro>h2 {
-    color: rgb(146, 255, 248);
+    color: rgb(111, 225, 218);
     font-size: 1.6em;
 }
 
 strong {
-    color: rgb(74, 234, 223);
+    color: rgba(74, 234, 223, 0.84);
     font-size: 1.2em;
     text-decoration: underline;
 }
@@ -98,12 +107,18 @@ li {
     margin: .5%;
 }
 
-.content>p {
-    margin: 2%;
+#portrait {
+    width: 10%;
+    border-radius: 8px;
+}
+
+a {
+    color: rgb(75, 189, 255);
+    text-decoration: none;
 }
 
 .readMoreButton {
-    background-color: rgba(250, 165, 7, 0.901);
+    background-color: rgba(222, 146, 3, 0.901);
     margin: 1% 2% 1% 1%;
     border-style: none;
     transition: all 0.2s;
