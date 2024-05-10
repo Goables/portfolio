@@ -287,17 +287,34 @@ p {
         display: flex;
         flex-flow: row wrap;
         align-self: center;
+        justify-content: center;
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 1%;
         margin-bottom: 3%;
         width: 80%;
-        color: #fff;
+        color: #0ae7ff;
         border-radius: 5px;
         border-width: 1px;
         border-style: solid;
         border-color: rgb(14, 14, 149);
-        background-color: rgba(139, 59, 176, 0.71);
+        background-color: rgba(8, 8, 84, 0.71);
+    
+        background: linear-gradient(180deg, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71), #156785, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71));
+        background-size: 500% 800%;
+        animation: gradient 8s linear infinite;
+    
         font-family: "JetBrains Mono", monospace;
+        font-size: 1em;
     }
+
+    #portrait {
+        margin-top: 2em;
+        width: 35%;
+        border-radius: 8px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(14, 14, 149);
+    }
+    
 }
