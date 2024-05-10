@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-    background: rgb(56, 62, 76);
+    background: rgb(43, 43, 48);
     display: flex;
     justify-content: center;
     flex-direction: row wrap;
@@ -21,14 +21,14 @@ body {
 
 .navbutton {
     text-decoration: none;
-    height: 3vh;
+    height: 3em;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     background: rgb(54, 76, 92);
     color: white;
-    padding: 0px 12px;
+    padding: 0px 2% 0px 2%;
     border-color: white;
     border-style: groove;
     border-radius: 6px;
@@ -52,23 +52,31 @@ body {
     display: flex;
     flex-flow: row wrap;
     align-self: center;
+    justify-content: center;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 1%;
     margin-bottom: 3%;
     width: 70%;
-    color: #fff;
+    color: #0ae7ff;
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(14, 14, 149);
-    background-color: rgba(139, 59, 176, 0.71);
+    background-color: rgba(8, 8, 84, 0.71);
+
+    background: linear-gradient(180deg, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71), #156785, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71));
+	background-size: 500% 800%;
+	animation: gradient 8s linear infinite;
+
     font-family: "JetBrains Mono", monospace;
+    font-size: 1.2em;
 }
 
 .content {
     display: flex;
     flex-flow: column;
+    width: 100%;
     justify-content: flex-start;
     margin: 1% 2% 2% 2%;
 }
@@ -86,12 +94,12 @@ body {
 #introduction>h2,
 #aboutMeIntro>h2,
 #resumeIntro>h2 {
-    color: rgb(111, 225, 218);
+    color: rgb(59, 205, 234);
     font-size: 1.6em;
 }
 
 strong {
-    color: rgba(74, 234, 223, 0.84);
+    color: rgba(90, 219, 255, 0.84);
     font-size: 1.2em;
     text-decoration: underline;
 }
@@ -108,13 +116,14 @@ li {
 }
 
 #portrait {
-    width: 10%;
+    margin-top: 2em;
+    width: 15%;
     border-radius: 8px;
 }
 
 a {
-    color: rgb(75, 189, 255);
-    text-decoration: none;
+    color: rgb(35, 171, 255);
+    text-decoration: underline;
 }
 
 .readMoreButton {
@@ -183,7 +192,6 @@ p {
     animation: sky infinite linear alternate;
     z-index: -3;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .sky2 {
@@ -195,7 +203,6 @@ p {
     background-color: #00000000;
     z-index: -2;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .star {
@@ -210,8 +217,8 @@ p {
 
 .ship {
     will-change: transform;
-    width: 1.1875rem;
-    height: 1.1875rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
     opacity: 1;
     z-index: -1;
 }
@@ -234,4 +241,63 @@ p {
     background-color: #ffcbb7;
     opacity: .5;
     z-index: -1;
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .navbutton {
+        font-size: .6em;
+    }
+
+    .contentWrapper {
+        display: flex;
+        flex-flow: row wrap;
+        align-self: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        width: 80%;
+        color: #fff;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(14, 14, 149);
+        background-color: rgba(139, 59, 176, 0.71);
+        font-family: "JetBrains Mono", monospace;
+    }
 }

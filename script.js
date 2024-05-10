@@ -44,14 +44,13 @@ if (SKY) {
             if (chance === 1) {
                 // document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: 5;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(4)}' loop='-1'><div style="z-index: 5;" class="${starClass}"></div></marquee>`
                 let chance2 = getRandomInt(8);
-                console.log(`was 3`);
                 if (chance2 === 2) {
-                    document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: 5;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(2)+1}' loop='-1'><img style="z-index: 5;  rotate: ${getRandomInt(360)}deg;" class="${starClass2}" src="/images/asteroid_RE.png"></img></marquee>`
+                    let chance3 = getRandomInt(2+1);
+                    document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: -1;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(2)+1}' loop='-1'><img style="z-index: 5;  rotate: ${getRandomInt(360)}deg; animation: rotating ${getRandomInt(5)*10}s linear infinite; height: ${chance3}rem; width: ${chance3}rem;" class="${starClass2}" src="/images/asteroid_RE.png"></img></marquee>`
                 } else {
-                    document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: 5;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(4)}' loop='-1'><div style="z-index: 5;" class="${starClass}"></div></marquee>`
+                    document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: -1;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(4)}' loop='-1'><div style="z-index: 5;" class="${starClass}"></div></marquee>`
                 }
             } else {
-                console.log(`was not 3`)
                 starTemplate += `<div style="${starStyle}" class="${starClass}"></div>`
             }
         }
@@ -59,9 +58,11 @@ if (SKY) {
         SKY.innerHTML = starTemplate;
     }
     function getStarsQuantity(skySize) {
-        const qH = skySize.width / 250 * (QUANTITY / 2);
-        const qV = skySize.height / 250 * (QUANTITY / 2);
-        return qH + qV;
+        console.log(skySize)
+        const qH = skySize.width / 300 * (QUANTITY / 2);
+        const qV = skySize.height / 300 * (QUANTITY / 2);
+        console.log((qH + qV)/1.2)
+        return (qH + qV)/1.2;
     }
     function getStarPos(skySize) {
         return {
