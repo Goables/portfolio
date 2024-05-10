@@ -119,6 +119,9 @@ li {
     margin-top: 2em;
     width: 15%;
     border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(14, 14, 149);
 }
 
 a {
@@ -311,10 +314,6 @@ p {
     #portrait {
         margin-top: 2em;
         width: 35%;
-        border-radius: 8px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgb(14, 14, 149);
     }
     
 }
