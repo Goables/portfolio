@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 * {
     overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -117,7 +119,7 @@ li {
 
 #portrait {
     margin-top: 2em;
-    width: 15%;
+    width: 25%;
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
@@ -130,35 +132,40 @@ a {
 }
 
 .readMoreButton {
-    background-color: rgba(222, 146, 3, 0.901);
+    font-family: "Fira Code", monospace;
+    background-color: rgba(0, 31, 41, 0.901);
     margin: 1% 2% 1% 1%;
     border-style: none;
     transition: all 0.2s;
     transition: 0.2s;
     padding: .8%;
     color: white;
-    font-size: 0.95em;
+    border-color: #06a7b8;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 0.85em;
     border-radius: 8px;
     position: relative;
 }
 
-.readMoreButton:after {
-    content: '>';
+.readMoreButton::after {
+    text-wrap: nowrap;
+    content: 'Read More';
     color: white;
     position: absolute;
     transition: 0.2s;
-    right: -2em;
+    right: 2em;
     opacity: 0;
 }
 
 .readMoreButton:hover {
-    padding-right: 24px;
+    padding-right: 110px;
     padding-left: 8px;
     cursor: pointer;
 }
 
 .readMoreButton:hover::after {
-    right: .5em;
+    right: .8em;
     opacity: 1;
 }
 
