@@ -22,16 +22,17 @@ body {
 }
 
 .navbutton {
+    font-family: "Fira Code", monospace;
+    background-color: rgba(0, 31, 41, 0.901);
     text-decoration: none;
     height: 3em;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
-    background: rgb(54, 76, 92);
     color: white;
+    border-color: #06a7b8;
     padding: 0px 2% 0px 2%;
-    border-color: white;
     border-style: groove;
     border-radius: 6px;
     font-size: .8em;
@@ -41,6 +42,10 @@ body {
     text-decoration: none;
     background: #3e5362;
     cursor: pointer;
+}
+
+.navbutton:hover::before {
+    content: '>';
 }
 
 
@@ -119,7 +124,7 @@ li {
 
 #portrait {
     margin-top: 2em;
-    width: 25%;
+    width: 20%;
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
