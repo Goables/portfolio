@@ -73,8 +73,8 @@ body {
     background-color: rgba(8, 8, 84, 0.71);
 
     background: linear-gradient(180deg, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71), #156785, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71));
-	background-size: 500% 800%;
-	animation: gradient 8s linear infinite;
+    background-size: 500% 800%;
+    animation: gradient 8s linear infinite;
 
     font-family: "JetBrains Mono", monospace;
     font-size: 1.2em;
@@ -192,6 +192,17 @@ p {
 
 #resumeEmbed {
     margin-top: 5%;
+}
+
+.liClick {
+    color: rgb(35, 171, 255);
+    text-decoration: underline;
+}
+
+.liClick:hover {
+    color: rgb(233, 240, 244);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -318,11 +329,11 @@ p {
         border-style: solid;
         border-color: rgb(14, 14, 149);
         background-color: rgba(8, 8, 84, 0.71);
-    
+
         background: linear-gradient(180deg, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71), #156785, rgba(8, 8, 84, 0.71), rgba(8, 8, 84, 0.71));
         background-size: 500% 800%;
         animation: gradient 8s linear infinite;
-    
+
         font-family: "JetBrains Mono", monospace;
         font-size: 1em;
     }
@@ -331,5 +342,5 @@ p {
         margin-top: 2em;
         width: 35%;
     }
-    
+
 }

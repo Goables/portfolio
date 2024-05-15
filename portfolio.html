@@ -4,45 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
     <div class="sky" data-sky></div>
-    <div class="sky2" id="moveStars" data-sky>
-    <script src="script.js"></script>
+    <div class="sky2" id="moveStars" data-sky></div>
+        <script src="script.js"></script>
 
-    <nav>
-        <section class="navbar">
-            <button class="navbutton" onclick="changePage(`index.html`)">Home</button>
-              <button class="navbutton" onclick="changePage(`aboutMe.html`)">About Me</button>
-              <button class="navbutton" onclick="changePage(`resume.html`)">Resume</button>
-              <button class="navbutton" onclick="changePage(`portfolio.html`)">Portfolio</button>
-              <button class="navbutton" onclick="changePage(`contactMe.html`)">Contact Me</button>
-          </section>
-    </nav>
+        <nav>
+            <section class="navbar">
+                <button class="navbutton" onclick="changePage(`index.html`)">Home</button>
+                <button class="navbutton" onclick="changePage(`aboutMe.html`)">About Me</button>
+                <button class="navbutton" onclick="changePage(`resume.html`)">Resume</button>
+                <button class="navbutton" onclick="changePage(`portfolio.html`)">Projects</button>
+                <button class="navbutton" onclick="changePage(`contactMe.html`)">Contact Me</button>
+            </section>
+        </nav>
 
-    <section class="banner">
-        <img class="bannerImage" src="">
-        <header class="bannerText">
+        <section class="banner">
+            <img class="bannerImage" src="">
+            <header class="bannerText">
 
-        </header>
-    </section>
-
-    <section class="contentWrapper">
-        <section class="content">
-            <h2>Portfolio</h2>
-            <strong>Web Projects</strong>
-            <ul>
-                <li><a href="https://jpmerchpage.netlify.app/merchhp">Jurassic Park Merchandise Page</a></li>
-                <li><a href="https://text-adventure-space.netlify.app/">Text Adventure Project</a></li>
-            </ul>
-            <strong>Writing Works</strong>
-            <ul>
-                <li><a href="https://docs.google.com/document/d/14KOvU6gkv1NC7PGYIlG7OGDe-9TFi2yGqNy0Wqr3cDk/edit?usp=sharing">Jurassic Park APA Essay</a></li>
-            </ul>
+            </header>
         </section>
-    </section>
+
+        <section class="contentWrapper">
+            <section class="content">
+                <h2>Portfolio</h2>
+                <strong>Web Projects</strong>
+                <ul>
+                    <li class="liClick" onclick="openLink(`https:/\/jpmerchpage.netlify.app/merchhp`)">Jurassic Park Merchandise Page
+                    </li>
+                    <li class="liClick" onclick="openLink(`https:/\/text-adventure-space.netlify.app/`)">Text Adventure Project</li>
+                </ul>
+                <strong>Writing Works</strong>
+                <ul>
+                    <li class="liClick" onclick="openLink(`https:/\/docs.google.com/document/d/14KOvU6gkv1NC7PGYIlG7OGDe-9TFi2yGqNy0Wqr3cDk/edit?usp=sharing`)">Jurassic Park APA Essay</li>
+                </ul>
+            </section>
+        </section>
 </body>
+
 </html>
