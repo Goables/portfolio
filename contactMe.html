@@ -40,7 +40,7 @@
                 <li>Phone Number - (559) 319-2588</li>
                 <li>Email - OwenGaffney008@gmail.com</li>
                 <li>Github - @Fraggleblap</li>
-                <li>LinkedIn Profile - <a href="https://www.linkedin.com/in/owen-gaffney/">LinkedIn Profile</a></li>
+                <li class="liClick" onclick="openLink(`https:/\/www.linkedin.com/in/owen-gaffney/`)">LinkedIn Profile</li>
             </ul>
 
             <form name="contact" method="POST" data-netlify="true">
@@ -54,7 +54,7 @@
                     <label>Subject: <input type="text" name="subject" required="true"/></label>
                 </p>
                 <p>
-                    <label>Message: <textarea name="message" required="true" ></textarea></label>
+                    <label>Message: <textarea style="max-width: 50em; max-height: 20em;" name="message" required="true" ></textarea></label>
                 </p>
                 <p>
                     <button type="submit" class="navbutton">Send</button>

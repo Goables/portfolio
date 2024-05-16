@@ -55,7 +55,7 @@ if (SKY) {
                 let chance2 = getRandomInt(8);
                 if (chance2 === 2) {
                     let chance3 = getRandomInt(2 + 1);
-                    document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: -1;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(2) + 1}' loop='-1'><img id="ship${divNum}" onclick="explode('ship${divNum}')" style="z-index: 5;  rotate: ${getRandomInt(360)}deg; animation: rotating ${getRandomInt(5) * 10}s linear infinite; height: ${chance3}rem; width: ${chance3}rem;" class="${starClass2}" src="/images/asteroid_RE.png"></img></marquee>`
+                    document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: -1;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(2)+1}' loop='-1'><img id="ship${divNum}" onclick="explode('ship${divNum}')" style="z-index: 5;  rotate: ${getRandomInt(360)}deg; animation: rotating ${getRandomInt(5)*10}s linear infinite; height: ${chance3}rem; width: ${chance3}rem;" class="${starClass2}" src="/images/asteroid_RE.png"></img></marquee>`
                     divNum++;
                 } else {
                     document.getElementById("moveStars").innerHTML += `<marquee style="${starStyle2}; z-index: -1;" direction='left' scrolldelay='0' width='100%' scrollspeed='true' scrollamount='${getRandomInt(4)}' loop='-1'><div style="z-index: 5;" class="${starClass}"></div></marquee>`
@@ -76,13 +76,13 @@ if (SKY) {
     }
     function getStarPos(skySize) {
         return {
-            top: Math.floor(Math.random() * skySize.height),
+            top: Math.floor((Math.random() * skySize.height) - 0.2),
             left: Math.floor(Math.random() * skySize.width)
         }
     }
     function getStarPos2(skySize) {
         return {
-            top: Math.floor(Math.random() * skySize.height),
+            top: Math.floor((Math.random() * skySize.height) - 0.2),
             left: Math.floor(Math.random() * skySize.width)
         }
     }
