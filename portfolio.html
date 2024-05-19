@@ -11,29 +11,60 @@
 <body>
     <div class="sky" data-sky></div>
     <div class="sky2" id="moveStars" data-sky></div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 
-        <nav>
-            <section class="navbar">
-                <button class="navbutton" onclick="changePage(`index.html`)">Home</button>
-                <button class="navbutton" onclick="changePage(`aboutMe.html`)">About Me</button>
-                <button class="navbutton" onclick="changePage(`resume.html`)">Resume</button>
-                <button class="navbutton" onclick="changePage(`portfolio.html`)">Projects</button>
-                <button class="navbutton" onclick="changePage(`contactMe.html`)">Contact Me</button>
+    <nav>
+        <section class="navbar">
+            <button class="navbutton" onclick="changePage(`index.html`)">Home</button>
+            <button class="navbutton" onclick="changePage(`aboutMe.html`)">About Me</button>
+            <button class="navbutton" onclick="changePage(`resume.html`)">Resume</button>
+            <button class="navbutton" onclick="changePage(`portfolio.html`)">Projects</button>
+            <button class="navbutton" onclick="changePage(`contactMe.html`)">Contact Me</button>
+        </section>
+    </nav>
+
+    <section class="banner">
+        <img class="bannerImage" src="">
+        <header class="bannerText">
+
+        </header>
+    </section>
+
+    <section class="contentWrapper">
+        <section class="content">
+            <h2 id="projectName">Projects</h2>
+            <p style="text-align: center;">Listed below are several projects I've worked on, or been a part of creating!
+            </p>
+            <section class="buttonBox">
+                <button class="navbutton" onclick="changePage(`index.html`)">HTML</button>
+                <button class="navbutton" onclick="changePage(`aboutMe.html`)">CSS</button>
+                <button class="navbutton" onclick="changePage(`resume.html`)">JavaScript</button>
+                <button class="navbutton" onclick="changePage(`portfolio.html`)">Figma</button>
+                <button class="navbutton" onclick="changePage(`contactMe.html`)">Project Management</button>
             </section>
-        </nav>
+        </section>
+    </section>
 
-        <section class="banner">
-            <img class="bannerImage" src="">
-            <header class="bannerText">
-
-            </header>
+    <section class="projectsWrapper">
+        <section class="billboard">
+            <section class="billboard-content">
+                <h2 class="projectH2">Jurassic Park Themed Merchandise Website</h2>
+                <section class="billCol">
+                    <img class="embedBox" src="/images/jpPage.png">
+                    <p>I was assigned a partner, and our task was to create a merchandise website with a Jurassic Park
+                        theme. We were required to only use HTML and CSS, with minimal JavaScript, while still having a
+                        functioning website. This was one of the first projects I worked on in HTML and CSS. <button class="readMoreButton projectButton" onclick="openLink(`https:/\/jpmerchpage.netlify.app/merchhp`)">></button> </p>
+                </section>
+            </section>
         </section>
 
-        <section class="contentWrapper">
-            <section class="content">
-                <h2>Portfolio</h2>
-                <strong>Web Projects</strong>
+    </section>
+</body>
+
+</html>
+
+
+<!-- <strong>Web Projects</strong>
                 <ul>
                     <li class="liClick" onclick="openLink(`https:/\/jpmerchpage.netlify.app/merchhp`)">Jurassic Park Merchandise Page
                     </li>
@@ -42,9 +73,4 @@
                 <strong>Writing Works</strong>
                 <ul>
                     <li class="liClick" onclick="openLink(`https:/\/docs.google.com/document/d/14KOvU6gkv1NC7PGYIlG7OGDe-9TFi2yGqNy0Wqr3cDk/edit?usp=sharing`)">Jurassic Park APA Essay</li>
-                </ul>
-            </section>
-        </section>
-</body>
-
-</html>
+                </ul> -->
